@@ -19,13 +19,13 @@ class DepthCalculator {
      arr.forEach(element => {
        if (Array.isArray(element)) {
          num = Math.max(num, 1 + this.calculateDepth(element))
-         console.log(this)
        }  
      });
  
-     return count;
+     return num;
    }
  };
+
 module.exports = {
   DepthCalculator
 };
